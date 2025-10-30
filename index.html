@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Real Cricket Match</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 60px;
+      background-color: #f9fafb;
+      color: #333;
+    }
+    </style>
+</head>
+<body>
+ 
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const roomID = params.get('roomID') || 'defaultRoom';
+    const deepLink = `kraftondeeplink://com.nautilus.realcricket/mVFa/?roomID=${roomID}`;
+
+    // Try to open the app immediately
+    window.location.replace(deepLink);
+  </script>
+</body>
+</html>
