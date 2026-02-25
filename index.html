@@ -19,7 +19,8 @@
   <script>
     const params = new URLSearchParams(window.location.search);
     const roomID = params.get('roomID') || 'defaultRoom';
-    const deepLink = `kraftondeeplink://com.nautilus.realcricket/mVFa/?roomID=${roomID}`;
+    const deepLink = `wordpuzzle://com.wordpuzzle.game/?roomID=${roomID}`;
+    //const deepLink = `kraftondeeplink://com.nautilus.realcricket/mVFa/?roomID=${roomID}`;
 
     // Try to open the app immediately
     window.location.replace(deepLink);
